@@ -1,2 +1,2 @@
 # YuChat
-uniapp多端开发，即时聊天App应用
+uniapp多端全栈云开发，即时聊天App应用
