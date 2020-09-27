@@ -1,0 +1,95 @@
+/**
+ * 这里是uni-app内置的常用样式变量
+ *
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App
+ *
+ */
+
+/**
+ * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能
+ *
+ * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件
+ */
+
+/* 颜色变量 */
+
+/* 行为相关颜色 */
+$y-color-primary: #5799ff;
+$y-color-success: #4cd964;
+$y-color-warning: #ffe431;
+$y-color-error: #ff5d5b;
+
+/* 文字基本颜色 */
+$y-text-color: #272832; //基本色
+$y-text-color-inverse: #fff; //反色
+$y-text-color-grey: #272832; //辅助灰色，如加载更多的提示信息
+$y-text-color-title: #272832;
+$y-text-color-disable: #c0c0c0;
+
+/* 背景颜色 */
+$y-bg-color: #f3f4f6;
+$y-bg-color-grey: #f4f4f4;
+$y-bg-color-hover: #f1f1f1; //点击状态颜色
+$y-bg-color-mask: #272832; //遮罩颜色
+
+/* 边框颜色 */
+$y-border-color: #272832;
+
+/* 尺寸变量 */
+
+/* 文字尺寸 */
+$y-font-size-sm: 24rpx;
+$y-font-size-base: 28rpx;
+$y-font-size-lg: 32rpx;
+
+/* 图片尺寸 */
+$y-img-size-sm: 40rpx;
+$y-img-size-base: 52rpx;
+$y-img-size-lg: 80rpx;
+
+/* Border Radius */
+$y-border-radius-sm: 4rpx;
+$y-border-radius-base: 6rpx;
+$y-border-radius-lg: 12rpx;
+$y-border-radius-circle: 50%;
+
+/* 水平间距 */
+$y-spacing-row-sm: 10px;
+$y-spacing-row-base: 20rpx;
+$y-spacing-row-lg: 30rpx;
+
+/* 垂直间距 */
+$y-spacing-col-sm: 8rpx;
+$y-spacing-col-base: 16rpx;
+$y-spacing-col-lg: 24rpx;
+
+/* 透明度 */
+$y-opacity-disabled: 0.3; // 组件禁用态的透明度
+
+/* 文章场景相关 */
+$y-color-title: #2c405a; // 文章标题颜色
+$y-font-size-title: 40rpx;
+$y-color-subtitle: #555555; // 二级标题颜色
+$y-font-size-subtitle: 36rpx;
+$y-color-paragraph: #3f536e; // 文章段落颜色
+$y-font-size-paragraph: 30rpx;
+
+/* flex 布局 */
+.d-flex {
+	display: flex;
+}
+.justify-content-between {
+	justify-content: space-between;
+}
+
+.align-items-center {
+	align-items: center;
+}
+
+/* 文本超出省略号 */
+@mixin text-ellipsis-1 {
+	overflow: hidden;
+	text-overflow:ellipsis;
+	white-space: nowrap;
+}

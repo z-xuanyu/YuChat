@@ -1,0 +1,33 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "皇家族",
+				"navigationBarBackgroundColor":"#FFFFFF"
+			}
+		}
+	    ,{
+            "path" : "pages/friend-request/friend-request",
+            "style" : {
+				"navigationBarTitleText": "好友请求"
+			}
+        }
+        ,{
+            "path" : "pages/user-prifile/user-prifile",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/chat-message-content/chat-message-content",
+            "style" : {
+				"navigationStyle":"custom"
+			}
+        }
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "皇家族",
+		"navigationBarBackgroundColor": "#FFFFFF",
+		"backgroundColor": "#F8F8F8"
+	}
+}
