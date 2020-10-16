@@ -1,12 +1,12 @@
 <template>
 	<view class="chat-content-wrapper">
-		<scroll-view scroll-y="true" style="height: 100%;">
-			<block v-for="item in 10" :key="item">
-				<view class="chat-left d-flex">
+		<scroll-view scroll-y="true" style="height: 100%;" scroll-into-view="scrollId9">
+			<block v-for="(item,index) in 10" :key="index">
+				<view class="chat-left d-flex" :id="'scrollId'+ item">
 					<view class="user-avatar"><image src="../../../static/images/xuanyu.jpg" mode="aspectFill"></image></view>
 					<view class="chat-message-text">离别后梦里依稀来到谢家，徘徊在小回廊阑干畔底下。</view>
 				</view>
-				<view class="chat-right d-flex">
+				<view class="chat-right d-flex" :id="'scrollId'+ item">
 					<view class="user-avatar"><image src="../../../static/images/xuanyu.jpg" mode="aspectFill"></image></view>
 					<view class="chat-message-text">醒来只见庭前多情的明月，它还在临照离人临照落花。</view>
 				</view>
